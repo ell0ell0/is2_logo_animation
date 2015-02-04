@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	background-repeat: repeat;
+	height: 100%;
+  	background: url('../img/white_stripe_bk.png');
+	background: url('../img/white_stripe_bk.png'), -moz-linear-gradient(top, rgba(0, 179, 233, 0.8) 0%, rgba(1, 176, 229, 0.8) 1%, rgba(34, 34, 34, 0.85) 50%, rgba(34, 34, 34, 0.9) 98%) !important;
+	background: url('../img/white_stripe_bk.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 179, 233, 0.8)), color-stop(1%, rgba(1, 176, 229, 0.8)), color-stop(50%, rgba(34, 34, 34, 0.85)), color-stop(98%, rgba(34, 34, 34, 0.9))) !important;
+	background: url('../img/white_stripe_bk.png'), -webkit-linear-gradient(top, rgba(0, 179, 233, 0.8) 0%, rgba(1, 176, 229, 0.8) 1%, rgba(34, 34, 34, 0.85) 50%, rgba(34, 34, 34, 0.9) 98%) !important;
+	background: url('../img/white_stripe_bk.png'), -ms-linear-gradient(top, rgba(0, 179, 233, 0.8) 0%, rgba(1, 176, 229, 0.8) 1%, rgba(34, 34, 34, 0.85) 50%, rgba(34, 34, 34, 0.9) 98%), url('/img/white_stripe_bk.png?364c4f963fa3') !important;
+	background: url('../img/white_stripe_bk.png'), linear-gradient(to bottom, rgba(0, 179, 233, 0.8) 0%, rgba(1, 176, 229, 0.8) 1%, rgba(34, 34, 34, 0.85) 50%, rgba(34, 34, 34, 0.9) 98%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc00b3e9', endColorstr='#e6222222',GradientType=0 );
+	background-size: cover;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.animation_wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+#animation_container {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 5%;
+	padding: 0;
+	visibility: hidden;
+}
+
+#animation_container path {
+	width: 100%;
+}
+
+#logo_paths {
+
+}
+#animation_container img {
+	opacity: 0;
+	margin-top: 10%;
+	width: 100%;
+}
+
+.outline {
+
+}
+
+.fill {
+    position: absolute;
+}
+
+.fill path {
+	opacity: 0;
+}
