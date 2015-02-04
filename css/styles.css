@@ -5,14 +5,19 @@
 html {
 	background-repeat: repeat;
 	height: 100%;
-  	background: url('../img/white_stripe_bk.png');
-	background: url('../img/white_stripe_bk.png'), -moz-linear-gradient(top, rgba(0, 179, 233, 0.8) 0%, rgba(1, 176, 229, 0.8) 1%, rgba(34, 34, 34, 0.85) 50%, rgba(34, 34, 34, 0.9) 98%) !important;
-	background: url('../img/white_stripe_bk.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 179, 233, 0.8)), color-stop(1%, rgba(1, 176, 229, 0.8)), color-stop(50%, rgba(34, 34, 34, 0.85)), color-stop(98%, rgba(34, 34, 34, 0.9))) !important;
-	background: url('../img/white_stripe_bk.png'), -webkit-linear-gradient(top, rgba(0, 179, 233, 0.8) 0%, rgba(1, 176, 229, 0.8) 1%, rgba(34, 34, 34, 0.85) 50%, rgba(34, 34, 34, 0.9) 98%) !important;
-	background: url('../img/white_stripe_bk.png'), -ms-linear-gradient(top, rgba(0, 179, 233, 0.8) 0%, rgba(1, 176, 229, 0.8) 1%, rgba(34, 34, 34, 0.85) 50%, rgba(34, 34, 34, 0.9) 98%), url('/img/white_stripe_bk.png?364c4f963fa3') !important;
-	background: url('../img/white_stripe_bk.png'), linear-gradient(to bottom, rgba(0, 179, 233, 0.8) 0%, rgba(1, 176, 229, 0.8) 1%, rgba(34, 34, 34, 0.85) 50%, rgba(34, 34, 34, 0.9) 98%) !important;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc00b3e9', endColorstr='#e6222222',GradientType=0 );
-	background-size: cover;
+/*  	background: url('../img/white_stripe_bk.png');*/
+	background: #001d26; /* Old browsers */
+
+background: -moz-linear-gradient(top,  rgba(0,103,132,1) 0%, rgba(0,29,38,1) 45%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,103,132,1)), color-stop(45%,rgba(0,29,38,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,103,132,1) 0%,rgba(0,29,38,1) 45%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,103,132,1) 0%,rgba(0,29,38,1) 45%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,103,132,1) 0%,rgba(0,29,38,1) 45%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,103,132,1) 0%,rgba(0,29,38,1) 45%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006784', endColorstr='#001d26',GradientType=0 ); /* IE6-9 */
+
+
+
 }
 
 body {
