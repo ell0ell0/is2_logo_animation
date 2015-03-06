@@ -19,21 +19,6 @@ $( document ).ready(function() {
         return document.createElementNS('http://www.w3.org/2000/svg', tag);
     }
 
-
-    function hideSVGPaths(parentElement) {
-        var paths = $(parentElement).find('path');
-        //for each PATH..
-        $.each( paths, function() {
-            //get the total length
-            var totalLength = this.getTotalLength();
-            //set PATHs to invisible
-            $(this).css({
-                'stroke-dashoffset': totalLength,
-                'stroke-dasharray': totalLength + ' ' + totalLength
-            });
-        });
-    }
-
     function drawSVGPaths(_parentElement, _duration, _timeDelay) {
         var paths = $(_parentElement).find('path');
         //for each PATH..
@@ -87,7 +72,7 @@ $( document ).ready(function() {
 
     //animate the logo
     drawSVGPaths($('.outline'), duration, 500);
-    fillSVG($('.fill'), 800, 500);
+    fillSVG($('.fill'), 800, 400);
     //animate the logo words
     $('#animation_container img').delay(800).animate({
         'opacity': 1
@@ -107,7 +92,9 @@ $( document ).ready(function() {
         'width': 0.4 * $(window).width() + 'px',
         'marginLeft': 0.3 * $(window).width() + 'px',
         'marginTop': 0.15 * $(window).height() + 'px'
-    }, 2300, 'easeInOut' );
+    }, 2300, 'easeInOut', function() {
+        //$('.animation_wrapper').delay(1000).fadeOut('slow');
+    });
 
     //on initial load sometime you see a brief flash of svg's 
     //so we keep everything invisible until evervthing is set in motion
